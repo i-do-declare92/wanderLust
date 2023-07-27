@@ -69,13 +69,15 @@ h1 {
 }
 
 #para {
+  
     margin: 10%;
     color: #f4ffff;
     font-size: 22px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Cormorant+Garamond:wght@300&family=Libre+Baskerville&display=swap');
 #heading {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Comorant Garamond', serif;
     color: #01afd1;
     text-shadow: 0 0 black;
     text-align: left;
@@ -89,4 +91,14 @@ h1 {
     left: 0;
     width: 42%;
     height: auto;
+}
+
+/*End of First Section and Beginning of Second Section*/
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Arvo&family=Cormorant+Garamond:wght@300&family=Kablammo&family=Libre+Baskerville&family=Rowdies:wght@700&display=swap');
+#hot-deals{
+    font-family: 'Kablammo', cursive;
+    font-weight: bold;
+    font-size: 75px;
+    text-decoration: wavy;
+    
 }
