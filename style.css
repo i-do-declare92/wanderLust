@@ -63,8 +63,14 @@ h1 {
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Libre+Baskerville&display=swap');
 
 .head-box {
+    display: flex;
     background-color: #7dbafb;
     padding-top: 1%;
+}
+
+#para {
+    margin: 10%;
+    color: #f4ffff;
 }
 
 #heading {
