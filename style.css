@@ -1,0 +1,49 @@
+body {
+    background-color: #f4ffff;
+    margin: auto;
+}
+
+
+
+#menu {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#menu-item{
+    justify-content: space-around;
+    margin: auto;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+
+.nav {
+    background-color: #01afd1;
+}
+
+#nav-item {
+    background-color: #01afd1;
+    color: black;
+    text-decoration: none;
+    margin: 30px;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+#nav-item:hover {
+    background-color: #7dbafb;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+h1 {
+    font-family: 'Arvo', serif;
+    text-align: center;
+}
