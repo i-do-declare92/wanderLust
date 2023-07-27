@@ -2,6 +2,7 @@ body {
     background-color: #f4ffff;
     margin: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Libre+Baskerville&display=swap');
 
 
 
@@ -60,7 +61,6 @@ h1 {
     text-align: center;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Libre+Baskerville&display=swap');
 
 .head-box {
     display: flex;
@@ -71,6 +71,7 @@ h1 {
 #para {
     margin: 10%;
     color: #f4ffff;
+    font-size: 22px;
 }
 
 #heading {
@@ -78,6 +79,14 @@ h1 {
     color: #01afd1;
     text-shadow: 0 0 black;
     text-align: left;
-    font-size: 35px;
+    font-size: 40px;
     padding: 40px;
+}
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 40%;
+    height: auto;
 }
