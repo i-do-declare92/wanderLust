@@ -1,6 +1,6 @@
 body {
     background-color: #f4ffff;
-    margin: auto;
+    margin: 0;
 }
 
 
@@ -19,7 +19,7 @@ body {
 
 #menu li:hover {
     background-color: #f4ffff;
-    padding: 15px;
+    padding: 10px;
 }
 
 #menu-item{
@@ -29,7 +29,6 @@ body {
     font-weight: bold;
     list-style-type: none;
     text-decoration: none;
-    
 }
 
 .nav {
@@ -48,6 +47,7 @@ body {
 #nav-item:hover {
     background-color: #f4ffff;
     font-size: 16px;
+    padding: 0px;
 }
 
 a {
@@ -58,4 +58,20 @@ a {
 h1 {
     font-family: 'Arvo', serif;
     text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Libre+Baskerville&display=swap');
+
+.head-box {
+    background-color: #7dbafb;
+    padding-top: 1%;
+}
+
+#heading {
+    font-family: 'Libre Baskerville', serif;
+    color: #01afd1;
+    text-shadow: 0 0 black;
+    text-align: left;
+    font-size: 35px;
+    padding: 40px;
 }
