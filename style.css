@@ -1,5 +1,6 @@
 body {
     background-color: #f4ffff;
+    padding: 0;
     margin: 0;
 }
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Cormorant+Garamond:wght@300&family=Libre+Baskerville&display=swap');
@@ -37,18 +38,30 @@ body {
 }
 
 #nav-item {
-    background-color: #01afd1;
+    
     color: black;
     text-decoration: none;
-    margin: 30px;
+    margin: auto;
     padding: 10px;
     justify-content: space-evenly;
 }
 
 #nav-item:hover {
     background-color: #f4ffff;
+    object-fit: cover;
     font-size: 16px;
-    padding: 0px;
+    padding: auto;
+}
+
+.video-contain {
+    width: 100%;
+    height: 500px;
+}
+
+.video-contain video {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
 }
 
 a {
@@ -85,9 +98,9 @@ h1 {
 
 #plane {
     position: absolute;
-    top: 52%;
+    top: 100%;
     left: 0;
-    width: 42%;
+    width: 40%;
     height: auto;
 }
 
