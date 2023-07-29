@@ -64,6 +64,27 @@ body {
     object-fit: cover;
 }
 
+.over-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #f4ffff;
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+}
+
+.over-img {
+    position: absolute;
+    top: 43px;
+    left: 0px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
 }
