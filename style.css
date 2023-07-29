@@ -19,14 +19,12 @@ body {
     text-align: center;
 }
 
-#menu li:hover {
-    background-color: #f4ffff;
-    padding: 10px;
-}
+
 
 #menu-item{
+    width: 100%;
     justify-content: space-around;
-    margin: auto;
+    margin: 0;
     font-size: 18px;
     font-weight: bold;
     list-style-type: none;
@@ -35,13 +33,15 @@ body {
 
 .nav {
     background-color: #01afd1;
+ 
 }
 
+
 #nav-item {
-    
+    width: 100%;
     color: black;
     text-decoration: none;
-    margin: auto;
+    margin: 0;
     padding: 10px;
     justify-content: space-evenly;
 }
@@ -49,8 +49,7 @@ body {
 #nav-item:hover {
     background-color: #f4ffff;
     object-fit: cover;
-    font-size: 16px;
-    padding: auto;
+    
 }
 
 .video-contain {
