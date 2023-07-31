@@ -89,6 +89,7 @@ a {
 }
 
 #video-title {
+    margin: 0;
     padding-top: 15%;
     font-family: 'Arvo', serif;
     font-size: 40px;
