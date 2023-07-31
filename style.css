@@ -97,7 +97,7 @@ a {
 
 h1 {
     text-align: center;
-    font-family: 'Kablammo', cursive;
+    font-family: 'Arvo', serif;
     font-weight: bold;
     font-size: 75px;
     text-decoration: wavy;;
@@ -110,10 +110,19 @@ h1 {
     padding-top: 1%;
 }
 
+#head-word {
+    
+    justify-content: flex-end;
+    
+}
+
 #para {
+    justify-content: flex-end;
+    
     text-align: left;
-    max-width: 300px;
-    margin: 20px auto;
+    width: 100%;
+    max-width: 600px;
+    margin: 250px;
     color: #f4ffff;
     font-size: 22px;
 }
@@ -133,15 +142,15 @@ h1 {
 }
 
 /*End of First Section and Beginning of Second Section*/
-#hot-deals{
-    font-family: 'Kablammo', cursive;
+#book-head{
+    font-family: 'Arvo', serif;
     font-weight: bold;
     font-size: 75px;
     text-decoration: wavy;
     
 }
 
-.deals-set {
+.book-set {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
