@@ -348,8 +348,16 @@ h1 {
 }
 
 .kard h2 {
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
     font-size: 20px;
     margin: 10px;
+}
+
+#para3 {
+    margin: 2px;
+    line-height: 1.5;
+    padding: 1%;
 }
 
 /* Beginning of Contact Us section */
