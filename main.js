@@ -1,19 +1,12 @@
 
 //Beginning of Hot Deals Carousel
 
-// JavaScript to add carousel functionality
 const carousel = document.querySelector('.carousel');
 const cards = document.querySelectorAll('.card1');
 const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
 const cardWidth = cards[0].offsetWidth; // Get the width of the cards
 
-cards.forEach(card => {
-    const revealButton = card.querySelector('.reveal-btn');
-    revealButton.addEventListener('click', () => {
-        card.classList.toggle('active');
-    });
-});
 let currentIndex = 0;
 
 // Function to slide the carousel
@@ -25,7 +18,7 @@ function slideCarousel() {
 
 // Function to handle previous button click
 function showPreviousCard() {
-  if (currentIndex > 1) {
+  if (currentIndex > 0) {
     currentIndex--;
     slideCarousel();
   }
@@ -42,4 +35,15 @@ function showNextCard() {
 // Add click event listeners to the navigation buttons
 prevButton.addEventListener('click', showPreviousCard);
 nextButton.addEventListener('click', showNextCard);
+//Reveals the more info button
+cards.forEach(card => {
+    const revealButton = card.querySelector('.reveal-btn');
+    revealButton.addEventListener('click', () => {
+        card.classList.toggle('active');
+    });
+});
+
+
+
+
 //End of Hot Deals Carousel
