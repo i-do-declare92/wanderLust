@@ -1,5 +1,5 @@
 
-
+//Beginning of Hot Deals Carousel
 
 // JavaScript to add carousel functionality
 const carousel = document.querySelector('.carousel');
@@ -71,3 +71,5 @@ window.addEventListener('resize', () => {
     centerChosenCard();
   }
 });
+
+//End of Hot Deals Carousel
