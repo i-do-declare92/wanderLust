@@ -3,8 +3,7 @@ body {
     padding: 0;
     margin: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Cormorant+Garamond:wght@300&family=Libre+Baskerville&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Arvo&family=Cormorant+Garamond:wght@300&family=Kablammo&family=Questrial&display=swap');
 
 
 #menu {
@@ -98,7 +97,7 @@ a {
 
 h1 {
     text-align: center;
-    font-family: 'Arvo', serif;
+    font-family: 'Questrial', sans-serif;
     font-weight: bold;
     font-size: 75px;
     text-decoration: wavy;
@@ -108,22 +107,37 @@ h1 {
 .head-box {
     display: flex;
     background-color: #9abbeb;
-    padding-top: 1%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#head-pic h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 #head-word {
-    
-    justify-content: flex-end;
-    
+    flex: 2;
+}
+
+#new-title {
+    font-size: 50px;
+    color: #01afd1;
+    text-shadow:
+    -1px -1px 0 #01afd1,
+    1px -1px 0 #01afd1,
+    -1px 1px 0 #01afd1,
+    1px 1px 0 #01afd1;
+}
+
+
+#head-pic {
+    flex: 1;
+    margin-right: 20px;
 }
 
 #para {
-    justify-content: flex-end;
-    
-    text-align: left;
-    width: 100%;
-    max-width: 600px;
-    margin: 250px;
+    line-height: 1.5;
     color: #f4ffff;
     font-size: 22px;
 }
@@ -144,7 +158,7 @@ h1 {
 
 /*End of First Section and Beginning of Second Section*/
 #book-head{
-    font-family: 'Arvo', serif;
+    font-family: 'Questrial', sans-serif;
     font-weight: bold;
     font-size: 75px;
     text-decoration: wavy;
