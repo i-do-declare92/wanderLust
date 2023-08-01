@@ -218,6 +218,60 @@ h1 {
 }
 /*End of Booking and Beginning of Hot Deals*/
 
+.carousel-contain {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.card1 {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.card1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card1 h2 {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.card1 .reveal-btn {
+    background-color: #239EFE;
+    color: #f4ffff;
+    display: block;
+    padding: 8px 20px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card1 .reveal-btn:hover {
+    background-color: #9abbeb;
+}
+
+.card1.active .extra-info {
+    display: block;
+}
+
+.card1 .extra-info {
+    display: none;
+}
+
 /*End of Hot Deal and Beginning of Destinations*/
 
 /* Beginning of Contact Us section */
