@@ -312,6 +312,11 @@ h1 {
 
 /*End of Hot Deal and Beginning of Destinations*/
 
+#dest-head {
+    text-align: center;
+    font-size: 30px;
+}
+
 .kard-contain {
     display: flex;
     flex-wrap: wrap;
