@@ -178,7 +178,7 @@ h1 {
 
 .card {
     width: 400px;
-    border: 1px solid #ccc;
+    
     border-radius: 10px;
     overflow: hidden;
     margin: 20px;
@@ -262,7 +262,8 @@ h1 {
 .card1 {
     width: 1000px;
     max-width: 100%;
-    border: 1px solid #ccc;
+    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
     margin: 20px;
@@ -333,10 +334,11 @@ h1 {
 
 .kard {
     width: 300px;
-    border: 1px solid #ccc;
+    
     border-radius: 10px;
     overflow: hidden;
     margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .kard img {
