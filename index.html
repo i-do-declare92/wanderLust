@@ -236,10 +236,23 @@
         <div id="contact-square">
             <div id="contact-items">
                 <h1>Contact Us</h1>
-                <p>Throwing words in here to show working linkage with anchor tags. <br>
-                    Not stopping with out having the entire page full can become tedious. <br>
-                That is why I am breaking up each individual semtence and then. <br>
-            I will copy an dpaste this on to the other sections.</p>
+
+                <!-- Don't forget to connect form once deploying! -->
+                <form id="contact-form" action="" target="_blank">
+                    <label for="name" class="contact-label">Full Name</label><br>
+                    <input type="text" id="name" name="name" class="contact-input"><br>
+                    <label for="email" class="contact-label">Email</label><br>
+                    <input type="email" id="email" name="email" class="contact-input"><br>
+                    <label for="phone" class="contact-label">Phone</label><br>
+                    <input type="tel" id="phone" name="phone" class="contact-input"><br>
+                    <label for="message" class="contact-label">Message</label><br>
+                    <textarea type="text" id="message" name="message" class="contact-input"></textarea><br>
+                    <input type="submit" value="Send">
+                </form>
+
+                <div id="contact-img">
+                    <img src="./imgs/ContactUsPic.png" alt="Asian woman wearing glasses holding a yellow suitcase">
+                </div>
             </div>
         </div>
     </div>
