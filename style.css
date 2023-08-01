@@ -33,13 +33,14 @@ body {
 
 .nav {
     background-color: #01afd1;
- 
+    position: fixed;
+    width: 100%;
 }
 
 
 #nav-item {
     width: 100%;
-    color: black;
+    color: #f4ffff;
     text-decoration: none;
     margin: 0;
     padding: 10px;
@@ -48,6 +49,7 @@ body {
 
 #nav-item:hover {
     background-color: #f4ffff;
+    color: #000;
     object-fit: cover;
     
 }
