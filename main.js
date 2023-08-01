@@ -2,7 +2,7 @@
 //Beginning of Hot Deals Carousel
 
 // JavaScript to add carousel functionality
-const carousel = document.querySelector('.carousel');
+const carousel = document.querySelector('.carousel-contain');
 const cards = document.querySelectorAll('.card1');
 const revealButtons = document.querySelectorAll('.reveal-btn');
 const prevButton = document.querySelector('.prev-button');

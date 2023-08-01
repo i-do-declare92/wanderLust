@@ -218,7 +218,13 @@ h1 {
 }
 /*End of Booking and Beginning of Hot Deals*/
 
+#deals-sub {
+    text-align: center;
+    font-size: 30px;
+}
+
 .carousel-contain {
+    margin: 0 auto;
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -232,6 +238,7 @@ h1 {
     height: 40px;
     background-color: #239EFE;
     color: #f4ffff;
+    border: none;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -294,6 +301,12 @@ h1 {
 
 .card1 .extra-info {
     display: none;
+}
+
+#para2 {
+    font-size: 20px;
+    font-family: 'Acme', serif;
+    margin: 20px;
 }
 
 /*End of Hot Deal and Beginning of Destinations*/
