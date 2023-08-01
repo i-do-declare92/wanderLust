@@ -58,7 +58,24 @@ body {
     
 }
 
-/*End Of Navigation and Beginning of Video Header*/
+/*End of Navigation*/
+
+/* Beginning of general sections styling */
+/* Important for Navbar to not overlap headers when clicking an anchor */
+
+section {
+    padding-top: 40px;
+}
+
+.section-head {
+    margin: 10px 0 20px 0
+}
+
+/* End of sections styling */
+
+
+
+/*Beginning of Video Header*/
 
 .video-contain {
     width: 100%;
@@ -393,10 +410,6 @@ h1 {
 }
 
 /* Beginning of Contact Us section */
-
-#contact-square > h1 {
-    margin-bottom: 30px;
-}
 
 #contact-items {
     display: flex;
