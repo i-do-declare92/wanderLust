@@ -219,18 +219,42 @@ h1 {
 /*End of Booking and Beginning of Hot Deals*/
 
 .carousel-contain {
+    position: relative;
     width: 100%;
     overflow: hidden;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #239EFE;
+    color: #f4ffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 20px;
+}
+
+.next-button {
+    right: 20px;
 }
 
 .carousel {
     display: flex;
     transition: transform 0.3s ease;
+    margin: 0 auto;
+    width: fit-content;
+    
 }
 
 .card1 {
-    width: 100%;
-    max-width: 500px;
+    width: 1000px;
+    max-width: 100%;
     border: 1px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
@@ -243,7 +267,7 @@ h1 {
     display: block;
 }
 
-.card1 h2 {
+.card1 h1 {
     font-size: 24px;
     margin: 10px;
 }

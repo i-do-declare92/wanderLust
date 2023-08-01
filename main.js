@@ -27,7 +27,7 @@ function slideCarousel() {
 
 // Function to center the chosen card
 function centerChosenCard() {
-  const centerOffset = carouselWidth / 2 - cardWidth / 2;
+  const centerOffset = carouselWidth / 20 - cardWidth / 20;
   carousel.style.transform = `translateX(${centerOffset - currentIndex * cardWidth}px)`;
 }
 
