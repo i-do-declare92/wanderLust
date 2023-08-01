@@ -43,6 +43,24 @@ cards.forEach(card => {
     });
 });
 
+//Funciton to hide carousel buttons
+function handleScroll() {
+    const carouselContainer = document.querySelector('.carousel-contain');
+    const carouselOffset = carouselContainer.offsetTop;
+    const scrollPosition = window.scrollY;
+  
+    if (scrollPosition > carouselOffset) {
+      prevButton.style.display = 'none';
+      nextButton.style.display = 'none';
+    } else {
+      prevButton.style.display = 'block';
+      nextButton.style.display = 'block';
+    }
+  }
+  
+  // Add scroll event listener to hide buttons when scrolling
+  window.addEventListener('scroll', handleScroll);
+
 
 
 
