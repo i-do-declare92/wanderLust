@@ -201,7 +201,7 @@ h1 {
 
 .card {
     width: 400px;
-    
+    background-color: #faf9fe;
     border-radius: 10px;
     overflow: hidden;
     margin: 20px;
@@ -306,12 +306,23 @@ h1 {
     margin: 0 auto;
     width: fit-content;
     padding: 10px;
+    animation: slide 0.5s linear 0.5s;
+    
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100);
+    }
 }
 
 .card1 {
     width: 850px;
     max-width: 100%;
-    
+    background-color: #faf9fe;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
@@ -383,7 +394,7 @@ h1 {
 
 .kard {
     width: 300px;
-    
+    background-color: #faf9fe;
     border-radius: 10px;
     overflow: hidden;
     margin: 10px;
@@ -420,6 +431,7 @@ h1 {
 
 #contact-form {
     width: 40%;
+    
 }
 
 .contact-label {
@@ -431,11 +443,12 @@ h1 {
 }
 
 .contact-input {
+    background-color: #faf9fe;
     width: 80%;
     height: 2.5em;
     border-radius: 2em;
-    border-style: solid;
-    border-color: #6f6f6f;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 18px;
 }
 
@@ -459,6 +472,11 @@ h1 {
     border-radius: 1em;
     border-style: none;
     font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #contact-submit:hover {
@@ -490,7 +508,7 @@ h1 {
     
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 1.5em;
-    background-color: #ffffff;
+    background-color: #faf9fe;
     text-align: center;
     padding: 10px;
     backface-visibility: hidden;
