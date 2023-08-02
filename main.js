@@ -7,8 +7,8 @@ const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
 const cardWidth = cards[0].offsetWidth; // Get the width of the cards
 const numCards = cards.length;
-const numVisibleCards = 4; // Number of visible cards in the carousel
-let currentIndex = Math.floor((numCards - numVisibleCards) / 1);
+const numVisibleCards = 3; // Number of visible cards in the carousel
+let currentIndex = numCards - numVisibleCards;
 let isCarouselPaused = false;
 
 
@@ -61,7 +61,7 @@ function resumeCarousel() {
 }
 
 slideCarousel();
-setTimeout(resumeCarousel, 1000)
+
 
 
 //Reveals the more info button

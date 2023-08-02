@@ -209,6 +209,10 @@ h1 {
 }
 
 .card img {
+    flex: 0 0 auto;
+    margin: 0 10px;
+    transform-origin: center center;
+    transition: transform 0.3s ease;
     width: 100%;
     height: 350px;
     object-fit: cover;
@@ -307,7 +311,8 @@ h1 {
     width: fit-content;
     padding: 10px;
     animation: slide 0.5s linear 0.5s;
-    
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes slide {
