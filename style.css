@@ -532,6 +532,8 @@ h1 {
 .faqs-img {
     display: block;
     margin: auto;
+    height: auto;
+    max-width: 100%;
 }
 
 #faqs-cards-contain {
