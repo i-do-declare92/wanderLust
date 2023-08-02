@@ -65,3 +65,59 @@ function handleScroll() {
 
 
 //End of Hot Deals Carousel
+
+// Beginning of FAQs card flip logic
+
+let faq_card = document.getElementById("flip");
+let faq_card2 = document.getElementById("flip2");
+let faq_card3 = document.getElementById("flip3");
+
+document.getElementById("flip_btn").addEventListener(
+  "click",
+  function () {
+    faq_card.classList.toggle("flipped");
+  },
+  false
+);
+
+document.getElementById("flip_btn2").addEventListener(
+  "click",
+  function () {
+    faq_card.classList.toggle("flipped");
+  },
+  false
+);
+
+document.getElementById("flip_btn3").addEventListener(
+  "click",
+  function () {
+    faq_card2.classList.toggle("flipped");
+  },
+  false
+);
+
+document.getElementById("flip_btn4").addEventListener(
+  "click",
+  function () {
+    faq_card2.classList.toggle("flipped");
+  },
+  false
+);
+
+document.getElementById("flip_btn5").addEventListener(
+  "click",
+  function () {
+    faq_card3.classList.toggle("flipped");
+  },
+  false
+);
+
+document.getElementById("flip_btn6").addEventListener(
+  "click",
+  function () {
+    faq_card3.classList.toggle("flipped");
+  },
+  false
+);
+
+// End of FAQs card flip logic
