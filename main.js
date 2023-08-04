@@ -105,6 +105,7 @@ document.getElementById("flip_btn").addEventListener(
   "click",
   function () {
     faq_card.classList.toggle("flipped");
+    adjustFlipCardHeights();
   },
   false
 );
@@ -113,6 +114,7 @@ document.getElementById("flip_btn2").addEventListener(
   "click",
   function () {
     faq_card.classList.toggle("flipped");
+    adjustFlipCardHeights();
   },
   false
 );
@@ -121,6 +123,7 @@ document.getElementById("flip_btn3").addEventListener(
   "click",
   function () {
     faq_card2.classList.toggle("flipped");
+    adjustFlipCardHeights();
   },
   false
 );
@@ -129,6 +132,7 @@ document.getElementById("flip_btn4").addEventListener(
   "click",
   function () {
     faq_card2.classList.toggle("flipped");
+    adjustFlipCardHeights();
   },
   false
 );
@@ -137,6 +141,7 @@ document.getElementById("flip_btn5").addEventListener(
   "click",
   function () {
     faq_card3.classList.toggle("flipped");
+    adjustFlipCardHeights();
   },
   false
 );
@@ -145,8 +150,52 @@ document.getElementById("flip_btn6").addEventListener(
   "click",
   function () {
     faq_card3.classList.toggle("flipped");
+    adjustFlipCardHeights();
   },
   false
 );
+
+
+// const containers = document.querySelectorAll('.flipper');
+
+// let maxHeight = 0;
+
+// containers.forEach(container => {
+//   const absoluteContent = container.querySelector('.back');
+//   const contentHeight = absoluteContent.clientHeight;
+//   console.log(contentHeight)
+
+//   if (contentHeight > maxHeight) {
+//     maxHeight = contentHeight
+//   }
+// });
+
+// containers.forEach(container => {
+//   container.style.height = maxHeight + "px";
+// })
+
+function adjustFlipCardHeights() {
+  const flipCards = document.querySelectorAll('.flipper');
+
+  flipCards.forEach(flipCard => {
+    const frontContainer = flipCard.querySelector('.faqs-card:not(.back)');
+    const backContainer = flipCard.querySelector('.faqs-card.back');
+
+    const isFlipped = flipCard.classList.contains('flipped');
+
+    const contentContainer = isFlipped ? backContainer : frontContainer;
+    const contentHeight = contentContainer.clientHeight;
+
+    flipCard.style.height = contentHeight + 'px';
+  });
+}
+
+// Function to run when all resources are loaded
+window.addEventListener('load', () => {
+  adjustFlipCardHeights(); // Initial adjustment after all resources are loaded
+
+  // Attach event listener to window resize
+  window.addEventListener('resize', adjustFlipCardHeights);
+});
 
 // End of FAQs card flip logic

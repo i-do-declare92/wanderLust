@@ -507,10 +507,9 @@ button {
     margin: auto;
 }
 
-.faqs-card, .faqs-card-back {
+.faqs-card {
     width: 100%;
     height: fit-content;
-    
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 1.5em;
     background-color: #faf9fe;
@@ -518,16 +517,20 @@ button {
     padding: 10px;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    position: relative;
+    position: absolute;
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
 }
 
-.faqs-card-back {
-    display: none;
-    transform: rotateX(0deg) rotateY(180deg);
-    -webkit-transform: rotateX(0deg) rotateY(180deg);
-    -moz-transform: rotateX(0deg) rotateY(180deg);
-    -ms-transform: rotateX(0deg) rotateY(180deg);
-    -o-transform: rotateX(0deg) rotateY(180deg);
+.faqs-card.back {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
 
     & h3 {
         font-family: sans-serif;
@@ -560,7 +563,7 @@ button {
     max-width: 100%;
 }
 
-#faqs-cards-contain {
+.faqs-cards-contain {
     width: 25%;
     perspective: 800px;
 }
@@ -583,12 +586,5 @@ button {
         -ms-transform: rotateY(180deg);
         -o-transform: rotateY(180deg);
 
-        .faqs-card {
-            display: none;
-        }
-
-        .faqs-card-back {
-            display: block;
-        }
     }
 }
