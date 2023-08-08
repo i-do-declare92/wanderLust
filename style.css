@@ -592,4 +592,46 @@ button {
     }
 }
 
+.foot-contain {
+    display: flex;
+    background-color: #01afd1;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    padding: 20px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: -50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.copyright {
+    margin-bottom: -100px;
+    color: #f4ffff;
+}
+
+.info2 {
+    color: #f4ffff;
+    text-align: left;
+}
+
+#mail {
+    color: #f4ffff;
+}
+
+#info3 {
+    color: #f4ffff;
+}
+
+
 /*Start Of The Mobile Side Of The CSS*/
