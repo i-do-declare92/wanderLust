@@ -100,6 +100,9 @@ function handleScroll() {
 let faq_card = document.getElementById("flip");
 let faq_card2 = document.getElementById("flip2");
 let faq_card3 = document.getElementById("flip3");
+let faq_card4 = document.getElementById("flip4");
+let faq_card5 = document.getElementById("flip5");
+let faq_card6 = document.getElementById("flip6");
 
 document.getElementById("flip_btn").addEventListener(
   "click",
@@ -155,24 +158,59 @@ document.getElementById("flip_btn6").addEventListener(
   false
 );
 
+document.getElementById("flip_btn7").addEventListener(
+  "click",
+  function () {
+    faq_card4.classList.toggle("flipped");
+    adjustFlipCardHeights();
+  },
+  false
+);
 
-// const containers = document.querySelectorAll('.flipper');
+document.getElementById("flip_btn8").addEventListener(
+  "click",
+  function () {
+    faq_card4.classList.toggle("flipped");
+    adjustFlipCardHeights();
+  },
+  false
+);
 
-// let maxHeight = 0;
+document.getElementById("flip_btn9").addEventListener(
+  "click",
+  function () {
+    faq_card5.classList.toggle("flipped");
+    adjustFlipCardHeights();
+  },
+  false
+);
 
-// containers.forEach(container => {
-//   const absoluteContent = container.querySelector('.back');
-//   const contentHeight = absoluteContent.clientHeight;
-//   console.log(contentHeight)
+document.getElementById("flip_btn10").addEventListener(
+  "click",
+  function () {
+    faq_card5.classList.toggle("flipped");
+    adjustFlipCardHeights();
+  },
+  false
+);
 
-//   if (contentHeight > maxHeight) {
-//     maxHeight = contentHeight
-//   }
-// });
+document.getElementById("flip_btn11").addEventListener(
+  "click",
+  function () {
+    faq_card6.classList.toggle("flipped");
+    adjustFlipCardHeights();
+  },
+  false
+);
 
-// containers.forEach(container => {
-//   container.style.height = maxHeight + "px";
-// })
+document.getElementById("flip_btn12").addEventListener(
+  "click",
+  function () {
+    faq_card6.classList.toggle("flipped");
+    adjustFlipCardHeights();
+  },
+  false
+);
 
 function adjustFlipCardHeights() {
   const flipCards = document.querySelectorAll('.flipper');
