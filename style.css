@@ -705,6 +705,11 @@ button {
 
 }
 
+#info3 a {
+    text-decoration: none;
+    
+}
+
 .copyright {
     margin-bottom: -100px;
     color: #f4ffff;
