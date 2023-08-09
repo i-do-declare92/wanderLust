@@ -613,6 +613,12 @@ button {
     
 }
 
+#review-par {
+    margin: 5px;
+    line-height: 1.3;
+    font-family: 'Arvo', serif;
+}
+
 .carden {
     justify-content: space-between;
     width: 400px;
