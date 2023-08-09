@@ -591,7 +591,72 @@ button {
 
     }
 }
+/*End of Frequently asked questions*/
 
+/*Beginning of Review Section*/
+#reviews {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.review-contain {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.carden {
+    flex: 1;
+    background-color: #f4ffff;
+    padding: 20px;
+    border-radius: -50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.img-cover {
+    position: relative;
+    object-fit: fill;
+    padding: 0;
+}
+
+.img-cover img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: fill;
+}
+
+.ovrly-txt {
+    flex: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #f4ffff;
+}
+
+.ovrly-txt h2 {
+    font-size: 40px;
+    margin-bottom: 150px;
+}
+
+.ovrly-txt p {
+    font-size: 26px;
+    margin-bottom: 50px;
+}
+
+#review-btn {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f4ffff;
+}
+/*End of the Review Section*/
+
+/*Beginning of footer*/
 .foot-contain {
     display: flex;
     background-color: #01afd1;
@@ -632,6 +697,6 @@ button {
 #info3 {
     color: #f4ffff;
 }
-
+/*End of Footer*/
 
 /*Start Of The Mobile Side Of The CSS*/
