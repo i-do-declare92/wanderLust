@@ -15,7 +15,6 @@ body {
 }
 
 #menu li {
-    margin-right: 20px;
     text-align: center;
 }
 
@@ -38,6 +37,10 @@ body {
     z-index: 2;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 
 #nav-item {
     width: 100%;
@@ -46,15 +49,14 @@ body {
     margin: 0;
     padding: 10px;
     justify-content: space-evenly;
-    object-fit: cover;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
 }
 
 #nav-item:hover {
     background-color: #f4ffff;
     width: 100%;
-    padding: 10px;
     color: #000;
-    object-fit: cover;
     
 }
 
@@ -731,3 +733,73 @@ button {
 /*End of Footer*/
 
 /*Start Of The Mobile Side Of The CSS*/
+
+@media only screen and (max-width: 768px) {
+
+    .nav {
+        display: none;
+        top: 40px;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #nav-item {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    #mobile-nav-contain {
+        position: fixed;
+        z-index: 2;
+        height: 40px;
+        width: 100%;
+    }
+
+    .mobile-nav {
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        z-index: 2;
+        height: 40px;
+
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+    }
+
+    .change {
+
+        .bar1 {
+            transform: translate(0, 11px) rotate(-45deg);
+            -webkit-transform: translate(0, 11px) rotate(-45deg);
+            -moz-transform: translate(0, 11px) rotate(-45deg);
+            -ms-transform: translate(0, 11px) rotate(-45deg);
+            -o-transform: translate(0, 11px) rotate(-45deg);
+        }
+
+        .bar2 {
+            opacity: 0;
+        }
+
+        .bar3 {
+            transform: translate(0, -11px) rotate(45deg);
+            -webkit-transform: translate(0, -11px) rotate(45deg);
+            -moz-transform: translate(0, -11px) rotate(45deg);
+            -ms-transform: translate(0, -11px) rotate(45deg);
+            -o-transform: translate(0, -11px) rotate(45deg);
+        }
+
+    }
+}

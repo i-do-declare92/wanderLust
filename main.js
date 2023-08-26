@@ -237,3 +237,22 @@ window.addEventListener('load', () => {
 });
 
 // End of FAQs card flip logic
+
+// Beginning of mobile navbar logic
+
+let nav = document.querySelector(".nav");
+let navContain = document.querySelector("#mobile-nav-contain");
+
+function hamburgerNav(bar) {
+
+  if (nav.style.display === "block") {
+    nav.style.display = "none";
+    navContain.style.backgroundColor = "transparent";
+  } else {
+    nav.style.display = "block";
+    navContain.style.backgroundColor = "#01afd1";
+  }
+
+  bar.classList.toggle("change");
+
+}
