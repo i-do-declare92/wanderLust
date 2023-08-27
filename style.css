@@ -185,15 +185,10 @@ h1 {
     margin-top: 20px;
 }
 
-#plane {
-    display: absolute;
-}
-
 /*End of First Section and Beginning of Second Section*/
 #book-head{
     font-family: 'Questrial', sans-serif;
     font-weight: bold;
-    font-size: 75px;
     text-decoration: wavy;
     
 }
@@ -739,6 +734,14 @@ button {
 
 @media only screen and (max-width: 768px) {
 
+    /* Start of general mobile css */
+
+    .section-head {
+        font-size: 55px;
+    }
+
+    /* End of general mobile css */
+
     /* Start of mobile nav */
     .nav {
         display: none;
@@ -834,4 +837,31 @@ button {
     }
 
     /* End of mobile video section */
+
+    /* Start of mobile header section */
+
+    .head-box {
+        display: block;
+        width: 100%;
+    }
+
+    #head-pic {
+        width: 100%;
+    }
+
+    #plane {
+        width: 100%;
+    }
+
+    #new-title {
+        margin: 0;
+    }
+
+    #para {
+        padding: 20px;
+        font-size: 25px;
+    }
+
+    /* End of mobile header section */
+
 }
