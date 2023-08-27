@@ -92,21 +92,24 @@ section {
 
 .over-text {
     position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     color: #f4ffff;
-    font-family: 'Arvo', serif;
-    font-size: 20px;
+    font-family: sans-serif;
+    font-size: 5vw;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    top: 45px;
+    text-shadow: black 4px 2px;
+    height: fit-content;
 }
 
 .over-img {
     position: absolute;
-    top: 43px;
-    left: 0px;
-    width: 150px;
-    height: 150px;
+    top: 55px;
+    left: 30px;
+    width: 125px;
+    height: 125px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -736,6 +739,7 @@ button {
 
 @media only screen and (max-width: 768px) {
 
+    /* Start of mobile nav */
     .nav {
         display: none;
         top: 40px;
@@ -802,4 +806,32 @@ button {
         }
 
     }
+
+    /* End of mobile nav */
+
+    /* Start of mobile video section */
+
+    .video-contain {
+        height: 245px;
+
+        video {
+            height: auto;
+        }
+    }
+
+    .over-text {
+        font-size: 6vw;
+        top: 10px;
+        left: 20px;
+        text-shadow: black 2px 2px;
+    }
+    
+    .over-img {
+        top: 15px;
+        left: 15px;
+        width: 60px;
+        height: 60px;
+    }
+
+    /* End of mobile video section */
 }

@@ -256,3 +256,5 @@ function hamburgerNav(bar) {
   bar.classList.toggle("change");
 
 }
+
+// End of mobile navbar logic
