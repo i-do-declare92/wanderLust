@@ -274,8 +274,6 @@ h1 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
     background-color: #239EFE;
     color: #f4ffff;
     border: none;
@@ -289,8 +287,6 @@ h1 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
     background-color: #239EFE;
     color: #f4ffff;
     border: none;
@@ -432,6 +428,7 @@ h1 {
 
 #contact-form {
     width: 40%;
+    padding-bottom: 15px;
     
 }
 
@@ -445,11 +442,12 @@ h1 {
 
 .contact-input {
     background-color: #faf9fe;
-    width: 80%;
     height: 2.5em;
+    width: 100%;
     border-radius: 2em;
     border: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
     font-size: 18px;
 }
 
@@ -468,12 +466,13 @@ h1 {
 
 #contact-submit {
     background-color: #239EFE;
-    width: 83%;
+    width: 100%;
     height: 2.5em;
     border-radius: 1em;
     border-style: none;
     font-size: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: content-box;
 }
 
 button {
@@ -488,6 +487,7 @@ button {
 
 #contact-img {
     height: auto;
+    margin-left: 120px;
     max-width: 100%;
 }
 
@@ -499,7 +499,7 @@ button {
     display: flex;
     justify-content: space-evenly;
     padding-top: 2em;
-    width: 80%;
+    width: 84%;
     margin: auto;
     flex-wrap: wrap;
 }
@@ -562,7 +562,7 @@ button {
 }
 
 .faqs-cards-contain {
-    width: 30%;
+    width: 450px;
     perspective: 800px;
     margin: 1em;
 }
@@ -598,6 +598,7 @@ button {
 
 .review-contain {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
     margin-bottom: 20px;
@@ -688,8 +689,9 @@ button {
     background-color: #01afd1;
     justify-content: space-between;
     align-items: center;
-    height: 20vh;
+    height: fit-content;
     padding: 5px;
+    flex-wrap: wrap;
 }
 
 .icons {
@@ -768,9 +770,9 @@ button {
         display: inline-block;
         cursor: pointer;
         position: absolute;
-        right: 10px;
         z-index: 2;
         height: 40px;
+        right: 3vw;
 
     }
 
@@ -815,10 +817,11 @@ button {
     /* Start of mobile video section */
 
     .video-contain {
-        height: 245px;
+        height: fit-content;
+        background-color: #9ABBEB;
 
-        video {
-            height: auto;
+        > video {
+            height: fit-content;
         }
     }
 
@@ -864,4 +867,50 @@ button {
 
     /* End of mobile header section */
 
+    /* Start of mobile hot deals section */
+
+    .nav-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .prev-button {
+        left: 10px;
+    }
+
+    .next-button {
+        right: 10px;
+    }
+
+    .card1 {
+        width: 385px;
+    }
+
+    /* End of mobile hot deals section */
+
+    /* Start of mobile contact us section */
+
+    #contact-form {
+        width: 75%;
+    }
+
+    #contact-img {
+        margin: 0;
+    }
+
+
+
+
+
+
+
+    /* Start of mobile footer section */
+
+    .copyright {
+        margin: 0;
+    }
+
+    #info3 {
+        margin: 0;
+    }
 }
