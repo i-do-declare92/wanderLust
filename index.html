@@ -6,6 +6,12 @@
     <title>Wanderlust Destinations</title>
     <link rel="icon" type="img/png" href="./imgs/WanderLogo.png">
     <link rel="stylesheet" href="./style.css">
+
+    
+    <script>
+        /*empty tag, all it does is prevent a bug in firefox that can mess the carousel up*/
+        let FF_FOUC_FIX;
+    </script>
 </head>
 <body>
 
@@ -226,7 +232,33 @@
         <h2 id="deals-sub">
             Check out some of the hottest deals going on right now!
         </h2>
-        <div class="carousel-contain">
+
+
+
+        <div class="wrapper">
+            <ul class="carousel" data-target="carousel">
+                <li class="cardz" data-target="cardz">
+                    <img class="cardz-img" src="./imgs/SanJuan.jpg" alt="image of an overview of the beaches of SanJuan in the sunrise">
+
+                </li>
+                <li class="cardz" data-target="cardz">
+                    <img class="cardz-img" src="./imgs/Scotland4.jpg" alt="image looking up at scotlands gasgow catherdral">
+                </li>
+                <li class="cardz" data-target="cardz">
+                    <img class="cardz-img" src="./imgs/London6.jpg" alt="image of londons ferris wheel lighting up the water way">
+                </li>
+            </ul>
+
+            <div class="button-wrapper">
+                <button class="slide-button" data-action="slideLeft">&lt;</button>
+                <button class="slide-button" data-action="slideRight">&gt;</button>
+            </div>
+        </div>
+
+
+
+
+        <!-- <div class="carousel-contain">
             <button class="nav-button prev-button">&lt;</button>
             <div class="carousel">
                 <div class="card1">
@@ -265,7 +297,7 @@
 
             </div>
             <button class="nav-button next-button">&gt;</button>
-        </div>
+        </div> -->
     </section>
 
 
