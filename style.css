@@ -362,9 +362,6 @@ h1 {
     display: block;
 }
 
-.card1 .extra-info {
-    display: none;
-}
 
 #para2 {
     font-size: 20px;
@@ -374,22 +371,18 @@ h1 {
 
 
 .wrapper {
-    height: 600px;
-    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 750px;
+    width: 800px;
     position: relative;
     overflow: visible;
     margin: 0 auto;
 }
-.button-wrapper {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-}
 
 .slide-button {
+    z-index: 1;
     font-size: 20px;
     text-align: center;
     display: inline-block;
@@ -419,17 +412,45 @@ h1 {
     transition: all 1s ease;
 }
 .cardz {
-    background: black;
-    min-width: 700px;
-    height: 600px;
+    background: #FAF9FE;
+    min-width: 800px;
+    height: fit-content;
     margin-right: 2em;
     display: inline-block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .cardz-img {
-    height: 100%;
     width: 100%;
+    border-radius: 10px 10px 0px 0px;
 }
+
+#cardz-title {
+    font-size: 35px;
+    margin: 0;
+}
+
+.reveal-btn {
+    font-size: 20px;
+    background-color: #239EFE;
+    color: #f4ffff;
+    display: block;
+    padding: 8px 20px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.extra-info {
+    display: none;
+}
+
+.cardz.active .extra-info {
+    display: block;
+} 
 
 /*End of Hot Deal and Beginning of Destinations*/
 

@@ -96,6 +96,7 @@ const carousel = document.querySelector("[data-target='carousel']");
 const cardz = carousel.querySelector("[data-target='cardz']");
 const leftButton = document.querySelector("[data-action='slideLeft']");
 const rightButton = document.querySelector("[data-action='slideRight']");
+const cardzz = document.querySelectorAll('.cardz')
 
 const cardCount = carousel.querySelectorAll("[data-target='cardz']").length;
 
@@ -146,14 +147,27 @@ leftButton.addEventListener("click", function () {
   }
 });
 rightButton.addEventListener("click", function () {
+  console.log(offset)
+  console.log(maxX)
   if (offset !== maxX) {
     offset -= carouselWidth + cardMarginRight;
     updateCarouselTransform();
-  } else {
+    console.log(offset)
+    console.log(maxX)
+  } else if (offset <= maxX) {
     offset = 0;
     updateCarouselTransform();
   }
 });
+
+// //Reveals the more info button
+  cardzz.forEach(card => {
+      const revealButton = card.querySelector('.reveal-btn');
+      revealButton.addEventListener('click', () => {
+          card.classList.toggle('active');
+          console.log("test")
+      });
+  });
 
 
 
