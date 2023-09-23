@@ -106,6 +106,10 @@ section {
 	height: 125px;
 	border-radius: 50%;
 	overflow: hidden;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
 }
 
 a {
@@ -190,10 +194,14 @@ h1 {
 .card {
 	width: 400px;
 	background-color: #faf9fe;
-	border-radius: 10px;
 	overflow: hidden;
 	margin: 20px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 }
 
 .card img {
@@ -219,9 +227,13 @@ h1 {
 	padding: 8px 20px;
 	margin: 5px;
 	border: none;
-	border-radius: 5px;
 	cursor: pointer;
 	text-decoration: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
 }
 
 .card-btns button:hover {
@@ -414,12 +426,13 @@ h1 {
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	box-sizing: border-box;
 	font-size: 18px;
+	padding: 1em;
 }
 
 #message {
 	height: 20em;
 	overflow-y: scroll;
-	padding: 0.5em;
+	padding: 1em;
 	-ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
 	scrollbar-width: none; /* Hide scrollbar in Firefox */
 }
@@ -827,12 +840,12 @@ button {
 	/* Start of mobile hot deals section */
 
 	.wrapper {
-		width: 350px;
+		width: 95vw;
 		height: 500px;
 	}
 
 	.cardz {
-		min-width: 350px;
+		min-width: 95vw;
 		height: fit-content;
 	}
 
