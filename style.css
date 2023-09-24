@@ -893,6 +893,10 @@ button {
 /* Start of landscape mobile CSS */
 @media only screen and (max-height: 575.98px) and (orientation: landscape) {
 
+	#nav-item {
+		padding: 3vh;
+	}
+
 	.video-contain {
 		height: fit-content;
 
@@ -903,7 +907,7 @@ button {
 	}
 
 	.wrapper {
-		height: 175vh;
+		height: 180vh;
 		width: 60vw;
 	}
 
