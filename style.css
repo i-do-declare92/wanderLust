@@ -886,4 +886,24 @@ button {
 	#info3 {
 		margin: 0;
 	}
+
+	/* End of mobile footer section */
+}
+
+/* Start of landscape mobile CSS */
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+
+	.video-contain {
+		height: fit-content;
+
+		video {
+			height: fit-content;
+			display: block;
+		}
+	}
+
+	.wrapper {
+		height: 115vh;
+	}
+
 }
