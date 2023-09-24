@@ -903,7 +903,12 @@ button {
 	}
 
 	.wrapper {
-		height: 115vh;
+		height: 175vh;
+		width: 60vw;
+	}
+
+	.cardz {
+		min-width: 60vw;
 	}
 
 }
