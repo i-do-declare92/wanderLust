@@ -14,7 +14,7 @@
 	</head>
 	<body>
 		<!--Navigation will be through here-->
-		<nav class="nav">
+		<nav class="nav deskNav">
 			<ul id="menu">
 				<li id="menu-item">
 					<a href="#booking">
@@ -50,7 +50,42 @@
 		</nav>
 
 		<div id="mobile-nav-contain">
-			<nav class="mobile-nav" onclick="hamburgerNav(this)">
+			<nav class="nav mobNav">
+				<ul id="menu">
+					<li id="menu-item">
+						<a href="#booking">
+							<p id="nav-item">Booking</p>
+						</a>
+					</li>
+					<li id="menu-item">
+						<a href="#deals">
+							<p id="nav-item">Hot Deals</p>
+						</a>
+					</li>
+					<li id="menu-item">
+						<a href="#destinations">
+							<p id="nav-item">Destinations</p>
+						</a>
+					</li>
+					<li id="menu-item">
+						<a href="#contact">
+							<p id="nav-item">Contact</p>
+						</a>
+					</li>
+					<li id="menu-item">
+						<a href="#faqs">
+							<p id="nav-item">FAQ's</p>
+						</a>
+					</li>
+					<li id="menu-item">
+						<a href="#reviews">
+							<p id="nav-item">Reviews</p>
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<nav class="mobile-nav" onclick="hamburgerNav()">
 				<div class="bar1"></div>
 				<div class="bar2"></div>
 				<div class="bar3"></div>
@@ -61,7 +96,7 @@
 		<!--Video and head will start here-->
 
 		<div class="video-contain">
-			<video controls playsinline>
+			<video controls autoplay muted playsinline>
 				<source src="./vids/WanderlustVid3.mp4" type="video/mp4" />
 				<source src="./vids/WanderlustVid4.webm" type="video/webm" />
 
@@ -290,6 +325,99 @@
 				<div class="kard-set">
 					<div class="kard">
 						<img
+							src="./imgs/KeyWest.jpg"
+							alt="image of the beach in key west, florida"
+						/>
+						<h2 id="dest-title">Key West</h2>
+						<p id="para3">
+							Starting at $3,633 fly to the popular Key West, Florida and soak
+							up some sun at the beach or by the pool at the Hilton Garden Inn.
+						</p>
+					</div>
+					<div class="kard">
+						<img
+							src="./imgs/London6.jpg"
+							alt="image of a ferris wheel in london by a waterway"
+						/>
+						<h2 id="dest-title">London</h2>
+						<p id="para3">
+							Starting at $2,937 enjoy your nonstop flight to iconic London,
+							England and relax at the beautiful Hyatt Regency London Stratford.
+						</p>
+					</div>
+					<div class="kard">
+						<img
+							src="./imgs/Scotland4.jpg"
+							alt="image of a castle in the courtyard at the marriott in scotland"
+						/>
+						<h2 id="dest-title">Scotland</h2>
+						<p id="para3">
+							Starting at $2,281 visit Glasgow, Scotland and emerge yourself in
+							the culture at the Courtyard by Marriott.
+						</p>
+					</div>
+					<div class="kard">
+						<img
+							src="./imgs/SanJuan.jpg"
+							alt="image of san juans town and dock by the ocean"
+						/>
+						<h2 id="dest-title">San Juan</h2>
+						<p id="para3">
+							Starting at $2,831, no passport needed; fly out to San Juan,
+							Puerto Rico and relax in the sun at Hyatt Regency Grand Reserve.
+						</p>
+					</div>
+
+					<div class="kard">
+						<img
+							src="./imgs/Venice.jpg"
+							alt="image of the canal way on a clear day in venice"
+						/>
+						<h2 id="dest-title">Venice</h2>
+						<p id="para3">
+							Starting at $4,593 set adrift and make some memories in Venice,
+							Italy during the day while you relax in your comfortable room
+							Hyatt Centric Venice Murano.
+						</p>
+					</div>
+					<div class="kard">
+						<img
+							src="./imgs/Madrid.jpg"
+							alt="still image of the city nightlife in madrid"
+						/>
+						<h2 id="dest-title">Madrid</h2>
+						<p id="para3">
+							Starting at $4,349 travel to Madrid, Spain and visit the art
+							museums. Then enjoy some dinner in your room at The Westin
+							Palace Madrid.
+						</p>
+					</div>
+					<div class="kard">
+						<img
+							src="./imgs/Maldives.jpg"
+							alt="image of a gazebo on the harbor side in maldives"
+						/>
+						<h2 id="dest-title">Maldives</h2>
+						<p id="para3">
+							Starting at $5,177 experience Maldives in your all inclusive
+							resort with your Oceanview room at OBLU XPErience Ailafushi.
+						</p>
+					</div>
+					<div class="kard">
+						<img
+							src="./imgs/MontegoBay.jpg"
+							alt="image of the beach side on a clear day in montego bay"
+						/>
+						<h2 id="dest-title">Montego Bay</h2>
+						<p id="para3">
+							Starting at $3,905 enjoy your nonstop flight to the Caribbean;
+							Montego Bay, Jamaica and indulge in the drinks and food at
+							Secrets Resorts.
+						</p>
+					</div>
+
+					<div class="kard">
+						<img
 							src="./imgs/Santorini.jpg"
 							alt="image of an aerial view of santorinis beaches and village"
 						/>
@@ -332,101 +460,6 @@
 							Starting at $3,396, enjoy your nonstop flight to Cancun, Mexico
 							and stay at leave your wallet in your room in your all inclusive
 							resort at Dreams Resort.
-						</p>
-					</div>
-					<div class="kard-set">
-						<div class="kard">
-							<img
-								src="./imgs/Venice.jpg"
-								alt="image of the canal way on a clear day in venice"
-							/>
-							<h2 id="dest-title">Venice</h2>
-							<p id="para3">
-								Starting at $4,593 set adrift and make some memories in Venice,
-								Italy during the day while you relax in your comfortable room
-								Hyatt Centric Venice Murano.
-							</p>
-						</div>
-						<div class="kard">
-							<img
-								src="./imgs/Madrid.jpg"
-								alt="still image of the city nightlife in madrid"
-							/>
-							<h2 id="dest-title">Madrid</h2>
-							<p id="para3">
-								Starting at $4,349 travel to Madrid, Spain and visit the art
-								museums. Then enjoy some dinner in your room at The Westin
-								Palace Madrid.
-							</p>
-						</div>
-						<div class="kard">
-							<img
-								src="./imgs/Maldives.jpg"
-								alt="image of a gazebo on the harbor side in maldives"
-							/>
-							<h2 id="dest-title">Maldives</h2>
-							<p id="para3">
-								Starting at $5,177 experience Maldives in your all inclusive
-								resort with your Oceanview room at OBLU XPErience Ailafushi.
-							</p>
-						</div>
-						<div class="kard">
-							<img
-								src="./imgs/MontegoBay.jpg"
-								alt="image of the beach side on a clear day in montego bay"
-							/>
-							<h2 id="dest-title">Montego Bay</h2>
-							<p id="para3">
-								Starting at $3,905 enjoy your nonstop flight to the Caribbean;
-								Montego Bay, Jamaica and indulge in the drinks and food at
-								Secrets Resorts.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="kard-set">
-					<div class="kard">
-						<img
-							src="./imgs/KeyWest.jpg"
-							alt="image of the beach in key west, florida"
-						/>
-						<h2 id="dest-title">Key West</h2>
-						<p id="para3">
-							Starting at $3,633 fly to the popular Key West, Florida and soak
-							up some sun at the beach or by the pool at the Hilton Garden Inn.
-						</p>
-					</div>
-					<div class="kard">
-						<img
-							src="./imgs/London6.jpg"
-							alt="image of a ferris wheel in london by a waterway"
-						/>
-						<h2 id="dest-title">London</h2>
-						<p id="para3">
-							Starting at $2,937 enjoy your nonstop flight to iconic London,
-							England and relax at the beautiful Hyatt Regency London Stratford.
-						</p>
-					</div>
-					<div class="kard">
-						<img
-							src="./imgs/Scotland4.jpg"
-							alt="image of a castle in the courtyard at the marriott in scotland"
-						/>
-						<h2 id="dest-title">Scotland</h2>
-						<p id="para3">
-							Starting at $2,281 visit Glasgow, Scotland and emerge yourself in
-							the culture at the Courtyard by Marriott.
-						</p>
-					</div>
-					<div class="kard">
-						<img
-							src="./imgs/SanJuan.jpg"
-							alt="image of san juans town and dock by the ocean"
-						/>
-						<h2 id="dest-title">San Juan</h2>
-						<p id="para3">
-							Starting at $2,831, no passport needed; fly out to San Juan,
-							Puerto Rico and relax in the sun at Hyatt Regency Grand Reserve.
 						</p>
 					</div>
 				</div>

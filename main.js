@@ -219,19 +219,53 @@ window.addEventListener("load", () => {
 
 // Beginning of mobile navbar logic
 
-let nav = document.querySelector(".nav");
+let nav = document.querySelector(".deskNav");
 let navContain = document.querySelector("#mobile-nav-contain");
+let navButton = document.querySelector(".mobile-nav");
+let mobNav = document.querySelector(".mobNav");
 
-function hamburgerNav(bar) {
-	if (nav.style.display === "block") {
+// Restores the desktop navbar if viewport width is increased after closing mobile navbar
+function restoreDesktopNav(width) {
+	if (width < 768 && navContain.classList.contains("open")) {
 		nav.style.display = "none";
-		navContain.style.backgroundColor = "transparent";
+		mobNav.style.display = "block";
+	} else if (width < 768 && !navContain.classList.contains("open")) {
+		nav.style.display = "none";
+		mobNav.style.display = "none";
 	} else {
 		nav.style.display = "block";
+	}
+}
+
+window.addEventListener("resize", () => {
+	const width = window.innerWidth;
+
+	restoreDesktopNav(width);
+});
+
+
+// Opens and closes mobile navbar when menu button is pressed
+function hamburgerNav() {
+	if (navContain.classList.contains("open")) {
+		mobNav.style.display = "none";
+		navContain.style.backgroundColor = "transparent";
+	} else {
+		mobNav.style.display = "block";
 		navContain.style.backgroundColor = "#01afd1";
 	}
 
-	bar.classList.toggle("change");
+	navContain.classList.toggle("open");
+	navButton.classList.toggle("change");
 }
+
+// Closes mobile navbar if you click anywhere outside of it.
+document.addEventListener("click", (event) => {
+	if (event.target.closest("#mobile-nav-contain") === null && navContain.classList.contains("open")) {
+		mobNav.style.display = "none";
+		navContain.style.backgroundColor = "transparent";
+		navContain.classList.toggle("open");
+		navButton.classList.toggle("change");
+	}
+});
 
 // End of mobile navbar logic
