@@ -76,135 +76,47 @@ cardzz.forEach((card) => {
 
 // Beginning of FAQs card flip logic
 
-let faq_card = document.getElementById("flip");
-let faq_card2 = document.getElementById("flip2");
-let faq_card3 = document.getElementById("flip3");
-let faq_card4 = document.getElementById("flip4");
-let faq_card5 = document.getElementById("flip5");
-let faq_card6 = document.getElementById("flip6");
+const cardData = [
+	{ cardId: "flip", frontBtnId: "flip_btn", backBtnId: "flip_btn2" },
+	{ cardId: "flip2", frontBtnId: "flip_btn3", backBtnId: "flip_btn4" },
+	{ cardId: "flip3", frontBtnId: "flip_btn5", backBtnId: "flip_btn6" },
+	{ cardId: "flip4", frontBtnId: "flip_btn7", backBtnId: "flip_btn8" },
+	{ cardId: "flip5", frontBtnId: "flip_btn9", backBtnId: "flip_btn10" },
+	{ cardId: "flip6", frontBtnId: "flip_btn11", backBtnId: "flip_btn12" },
+	// Add more card data objects as needed
+];
 
-document.getElementById("flip_btn").addEventListener(
-	"click",
-	function () {
-		faq_card.classList.toggle("flipped");
-		adjustFlipCardHeights();
-	},
-	false
-);
+cardData.forEach((data) => {
+	const card = document.getElementById(data.cardId);
+	const frontBtn = document.getElementById(data.frontBtnId);
+	const backBtn = document.getElementById(data.backBtnId);
 
-document.getElementById("flip_btn2").addEventListener(
-	"click",
-	function () {
-		faq_card.classList.toggle("flipped");
+	frontBtn.addEventListener("click", () => {
+		card.classList.toggle("flipped");
 		adjustFlipCardHeights();
-	},
-	false
-);
+	});
 
-document.getElementById("flip_btn3").addEventListener(
-	"click",
-	function () {
-		faq_card2.classList.toggle("flipped");
+	backBtn.addEventListener("click", () => {
+		card.classList.toggle("flipped");
 		adjustFlipCardHeights();
-	},
-	false
-);
-
-document.getElementById("flip_btn4").addEventListener(
-	"click",
-	function () {
-		faq_card2.classList.toggle("flipped");
-		adjustFlipCardHeights();
-	},
-	false
-);
-
-document.getElementById("flip_btn5").addEventListener(
-	"click",
-	function () {
-		faq_card3.classList.toggle("flipped");
-		adjustFlipCardHeights();
-	},
-	false
-);
-
-document.getElementById("flip_btn6").addEventListener(
-	"click",
-	function () {
-		faq_card3.classList.toggle("flipped");
-		adjustFlipCardHeights();
-	},
-	false
-);
-
-document.getElementById("flip_btn7").addEventListener(
-	"click",
-	function () {
-		faq_card4.classList.toggle("flipped");
-		adjustFlipCardHeights();
-	},
-	false
-);
-
-document.getElementById("flip_btn8").addEventListener(
-	"click",
-	function () {
-		faq_card4.classList.toggle("flipped");
-		adjustFlipCardHeights();
-	},
-	false
-);
-
-document.getElementById("flip_btn9").addEventListener(
-	"click",
-	function () {
-		faq_card5.classList.toggle("flipped");
-		adjustFlipCardHeights();
-	},
-	false
-);
-
-document.getElementById("flip_btn10").addEventListener(
-	"click",
-	function () {
-		faq_card5.classList.toggle("flipped");
-		adjustFlipCardHeights();
-	},
-	false
-);
-
-document.getElementById("flip_btn11").addEventListener(
-	"click",
-	function () {
-		faq_card6.classList.toggle("flipped");
-		adjustFlipCardHeights();
-	},
-	false
-);
-
-document.getElementById("flip_btn12").addEventListener(
-	"click",
-	function () {
-		faq_card6.classList.toggle("flipped");
-		adjustFlipCardHeights();
-	},
-	false
-);
+	});
+});
 
 function adjustFlipCardHeights() {
-	const flipCards = document.querySelectorAll(".flipper");
+	// const flipCards = document.querySelectorAll(".flipper");
 
-	flipCards.forEach((flipCard) => {
-		const frontContainer = flipCard.querySelector(".faqs-card:not(.back)");
-		const backContainer = flipCard.querySelector(".faqs-card.back");
+	// flipCards.forEach((flipCard) => {
+	// 	const frontContainer = flipCard.querySelector(".faqs-card:not(.back)");
+	// 	const backContainer = flipCard.querySelector(".faqs-card.back");
 
-		const isFlipped = flipCard.classList.contains("flipped");
+	// 	const isFlipped = flipCard.classList.contains("flipped");
 
-		const contentContainer = isFlipped ? backContainer : frontContainer;
-		const contentHeight = contentContainer.clientHeight;
+	// 	const contentContainer = isFlipped ? backContainer : frontContainer;
+	// 	const contentHeight = contentContainer.clientHeight;
 
-		flipCard.style.height = contentHeight + "px";
-	});
+	// 	flipCard.style.height = contentHeight + "px";
+	// });
+	console.log('test')
 }
 
 // Function to run when all resources are loaded
@@ -243,7 +155,6 @@ window.addEventListener("resize", () => {
 	restoreDesktopNav(width);
 });
 
-
 // Opens and closes mobile navbar when menu button is pressed
 function hamburgerNav() {
 	if (navContain.classList.contains("open")) {
@@ -260,7 +171,10 @@ function hamburgerNav() {
 
 // Closes mobile navbar if you click anywhere outside of it.
 document.addEventListener("click", (event) => {
-	if (event.target.closest("#mobile-nav-contain") === null && navContain.classList.contains("open")) {
+	if (
+		event.target.closest("#mobile-nav-contain") === null &&
+		navContain.classList.contains("open")
+	) {
 		mobNav.style.display = "none";
 		navContain.style.backgroundColor = "transparent";
 		navContain.classList.toggle("open");
