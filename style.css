@@ -290,9 +290,10 @@ h1 {
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
 
-	&:hover {
-		background-color: #9abbeb;
-	}
+}
+
+.slide-button:hover {
+	background-color: #9abbeb;
 }
 
 .carousel {
@@ -341,9 +342,10 @@ h1 {
 	cursor: pointer;
 	text-decoration: none;
 
-	&:hover {
-		background-color: #9abbeb;
-	}
+}
+
+.reveal-btn:hover {
+	background-color: #9abbeb;
 }
 
 .extra-info {
@@ -516,14 +518,16 @@ button {
 	-ms-transform: rotateY(180deg);
 	-o-transform: rotateY(180deg);
 
-	& h3 {
-		font-family: sans-serif;
-		font-weight: normal;
-		line-height: 130%;
-	}
+}
+
+.faqs-card.back h3 {
+	font-family: sans-serif;
+	font-weight: normal;
+	line-height: 130%;
 }
 
 .faqs-btn {
+	color: black;
 	background-color: #239efe;
 	border-radius: 2em;
 	border-style: none;
@@ -533,10 +537,11 @@ button {
 	padding: 15px 40px;
 	margin: auto;
 
-	&:hover {
-		cursor: pointer;
-		background-color: #9abbeb;
-	}
+}
+
+.faqs-btn:hover {
+	cursor: pointer;
+	background-color: #9abbeb;
 }
 
 .faqs-img {
@@ -564,13 +569,14 @@ button {
 	-ms-transition: transform 0.6s;
 	-o-transition: transform 0.6s;
 
-	&.flipped {
-		transform: rotateY(180deg);
-		-webkit-transform: rotateY(180deg);
-		-moz-transform: rotateY(180deg);
-		-ms-transform: rotateY(180deg);
-		-o-transform: rotateY(180deg);
-	}
+}
+
+.flipper.flipped {
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
 }
 /*End of Frequently asked questions*/
 
@@ -775,28 +781,26 @@ button {
 		-o-transition: 0.4s;
 	}
 
-	.change {
-		.bar1 {
-			transform: translate(0, 11px) rotate(-45deg);
-			-webkit-transform: translate(0, 11px) rotate(-45deg);
-			-moz-transform: translate(0, 11px) rotate(-45deg);
-			-ms-transform: translate(0, 11px) rotate(-45deg);
-			-o-transform: translate(0, 11px) rotate(-45deg);
-		}
-
-		.bar2 {
-			opacity: 0;
-		}
-
-		.bar3 {
-			transform: translate(0, -11px) rotate(45deg);
-			-webkit-transform: translate(0, -11px) rotate(45deg);
-			-moz-transform: translate(0, -11px) rotate(45deg);
-			-ms-transform: translate(0, -11px) rotate(45deg);
-			-o-transform: translate(0, -11px) rotate(45deg);
-		}
+	.change .bar1 {
+		transform: translate(0, 11px) rotate(-45deg);
+		-webkit-transform: translate(0, 11px) rotate(-45deg);
+		-moz-transform: translate(0, 11px) rotate(-45deg);
+		-ms-transform: translate(0, 11px) rotate(-45deg);
+		-o-transform: translate(0, 11px) rotate(-45deg);
 	}
 
+	.change .bar2 {
+		opacity: 0;
+	}
+
+	.change .bar3 {
+		transform: translate(0, -11px) rotate(45deg);
+		-webkit-transform: translate(0, -11px) rotate(45deg);
+		-moz-transform: translate(0, -11px) rotate(45deg);
+		-ms-transform: translate(0, -11px) rotate(45deg);
+		-o-transform: translate(0, -11px) rotate(45deg);
+	}
+	
 	/* End of general mobile nav */
 
 	/* Start of mobile video section */
@@ -805,9 +809,10 @@ button {
 		height: auto;
 		background-color: #9abbeb;
 
-		> #banner {
-			height: auto;
-		}
+	}
+
+	#banner {
+		height: auto;
 	}
 
 	.over-text {
@@ -913,10 +918,11 @@ button {
 	.video-contain {
 		height: fit-content;
 
-		> #banner {
-			height: fit-content;
-			display: block;
-		}
+	}
+	
+	#banner {
+		height: fit-content;
+		display: block;
 	}
 
 	.wrapper {
